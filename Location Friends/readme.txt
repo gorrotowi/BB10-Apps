@@ -1,38 +1,42 @@
-Map View
+========================================================================
+||                                                                    ||
+||                         Location Friends                           ||
+||                                                                    ||
+========================================================================
+
+
+Esta aplicación fue hecha en Cascades con la versión 10.2 
+
 
 ========================================================================
-Sample Description.
 
-The Map View example demonstrates how to display a certain location on
-a map control, how to drop push pins for specific map locations and how
-to change map altitude, tilt and heading.
 
-You will learn how to:
-- Use the MapView class
-- Work with ImageView's
-- Use property bindings
+Esta aplicación recolecta tu geolocalización para poder compartirla
 
-========================================================================
-Requirements:
+con quien tu desees utilizando el invocation framework, ademas de que 
 
-BlackBerry 10 Native SDK
+esta ubicación se puede obtener en el otro dispositivo y asi poder encontrar
 
-========================================================================
-Running the example:
+a esa persona de una manera facil en el mapa.
 
-1. Clone the Sample repository.
-2. Launch BlackBerry 10 Native SDK, and from the File menu, select Import.
-3. Expand General, and select Existing Projects into Workspace. Click Next.
-4. Browse to the location of your sample directory, and then click OK.
-5. The sample project should display in the Projects section. 
-   Click Finish to import the project into your workspace.
-6. In the Project Explorer pane, Right-click the project (for example hellocascades) 
-   and select Build Project.
-7. In the Project Explorer pane, Right-click the project (for example hellocascades) 
-   and select Run As > BlackBerry C/C++ Application.
-8. The application will now install and launch on your device if not you might
-   have to set up your environment: 
-   http://developer.blackberry.com/cascades/documentation/getting_started/setting_up.html
+El para se mueve según el dispositivo gire ayudando a la orientación 
 
-** Note **: This sample does not function on the simulator at this time. This sample will
-replace the more basic MapView and SimpleMap samples in the next release.
+del usuario.
+
+
+Por el momento los datos de ubicación se envian en formato json pero 
+
+en un proximo commit se espera poder enviar la ubicación en un formato 
+
+sencillo y facil de usar por parte del usuario.
+
+Ademas se planea incluir dentro del mapa datos de interes como 
+
+transportes públicos, ademas de que el usuario pueda de forma "manual" 
+
+corregir su ubicación en dado caso que los datos de geolocalización 
+
+tengan un margen de error considerable.
+
+
+
