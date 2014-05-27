@@ -7,5 +7,13 @@
         <source>BiciDF</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Disponibles:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Libres:</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

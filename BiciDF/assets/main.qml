@@ -6,8 +6,13 @@ import bb.cascades.maps 1.0
 import QtMobilitySubset.location 1.1
 
 import bb.cascades 1.2
+import "js/datos.js" as DatosJS
 
 Page {
+    
+    onCreationCompleted: {
+        DatosJS.llenarLista();
+    }
 
     Container {
         
@@ -112,22 +117,54 @@ Page {
                                 }
                             }
                             Label {
-                                text: Disponibles
+                                id: distanciametros
+                                text: ListItemData.distancia
+                                textStyle.fontSize: FontSize.Medium
+                                textStyle.color: Color.create("#380BDF")
+                                layoutProperties: AbsoluteLayoutProperties {
+                                    positionX: 25
+                                    positionY: 60
+                                }
+                            }
+                            Label {
+                                id: lblDisp
+                                text: qsTr("Disponibles:")
                                 textStyle.fontSize: FontSize.Medium
                                 textStyle.color: Color.create("#424242")
                                 layoutProperties: AbsoluteLayoutProperties {
                                     positionX: 25
-                                    positionY: 50
+                                    positionY: 100
                                 }
                             }
                             Label {
                                 id: dispBik
                                 text: ListItemData.disp
-                                textStyle.fontSize: FontSize.XLarge
+                                textStyle.fontSize: FontSize.Default
                                 textStyle.color: Color.create("#13BA32")
                                 layoutProperties: AbsoluteLayoutProperties {
-                                    positionX: 455
-                                    positionY: 15
+                                    positionX: 235
+                                    positionY: 102
+                                }
+                            }
+                            
+                            Label {
+                                id: lblfree
+                                text: qsTr("Libres:")
+                                textStyle.fontSize: FontSize.Medium
+                                textStyle.color: Color.create("#424242")
+                                layoutProperties: AbsoluteLayoutProperties {
+                                    positionX: 400
+                                    positionY: 100
+                                }
+                            }
+                            Label {
+                                id: dispLugar
+                                text: ListItemData.free
+                                textStyle.fontSize: FontSize.Default
+                                textStyle.color: Color.create("#13BA32")
+                                layoutProperties: AbsoluteLayoutProperties {
+                                    positionX: 515
+                                    positionY: 102
                                 }
                             }
                             
@@ -178,7 +215,9 @@ Page {
         for(var i=0;i<20;i++){
         gdm.insert({
         "name":"estacion",
-        "disp":"50"
+        "distancia":"500"+" metros",
+        "disp":"50",
+        "free":"15"
         });
     }
     }
