@@ -88,7 +88,7 @@ Page {
                     accessibility.name: "lblImporte"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 5
                     }
                     textStyle.color: Color.create("#000000")
@@ -107,7 +107,7 @@ Page {
                     accessibility.name: "lblImporte"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 50
                     }
                     textStyle.color: Color.create("#000000")
@@ -126,7 +126,7 @@ Page {
                     accessibility.name: "lblSubtotal"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 95
                     }
                     textStyle.color: Color.create("#000000")
@@ -145,7 +145,7 @@ Page {
                     accessibility.name: "lblRetencion"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 140
                     }
                     textStyle.color: Color.create("#000000")
@@ -164,7 +164,7 @@ Page {
                     accessibility.name: "lblSubtotal"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 185
                     }
                     textStyle.color: Color.create("#000000")
@@ -183,7 +183,7 @@ Page {
                     accessibility.name: "lblTotal"
                     text: qsTr('$0')
                     layoutProperties: AbsoluteLayoutProperties {
-                        positionX: 400
+                        positionX: 350
                         positionY: 230
                     }
                     textStyle.color: Color.create("#000000")
@@ -236,6 +236,7 @@ Page {
                         positionX: 70
                         positionY: 10
                     }
+                    maximumLength: 7
                     hintText: qsTr('5000')
                     onTextChanging: {
                         Funciones.calcular();
